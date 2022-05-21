@@ -52,9 +52,6 @@ function SearchMovie() {
 
   return (
     <div className="App">
-      <header>
-        <h1>Recherchez votre film</h1>
-      </header>
       <main>
         <Search handleInput={handleInput} search={search} />
 
