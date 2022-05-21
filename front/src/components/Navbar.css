@@ -9,7 +9,7 @@
 .navbar-logo {
   color: white;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -41,5 +41,5 @@
 }
 
 .nav-item a:hover {
-  background: rgb(0, 212, 212);
+  background: rgb(167, 201, 164);
 }

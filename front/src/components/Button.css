@@ -4,13 +4,13 @@
   padding: 6px 16px;
   font-size: 1.1rem;
   color: white;
-  background: rgb(0, 212, 212);
+  background: rgb(167, 201, 164);
   border-radius: 5px;
   transition: 0.3s all ease-out;
   cursor: pointer;
 }
 
 .btn:hover {
-  color: rgb(0, 212, 212);
+  color: rgb(167, 201, 164);
   background: white;
 }

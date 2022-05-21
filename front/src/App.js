@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Logic from './components/Logic'
+import SearchMovie from './components/SearchMovie'
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Page1 from './Pages/Page1';
@@ -16,7 +16,7 @@ function App() {
           <Route path="/signup" component={Signup}></Route>
         </Switch>
       </BrowserRouter>
-      <Logic/>
+      <SearchMovie/>
     </>
   );
 

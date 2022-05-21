@@ -4,14 +4,13 @@ function Popup({ selected, closePopup }) {
 	return (
 		<section className="popup">
 			<div className="content">
-				<h1>Popup</h1>
 				<h2>{ selected.Title } <span>({ selected.Year })</span></h2>
-				<p className="rating">Rating: {selected.imdbRating}</p>
+				<p className="rating">Edition: {selected.imdbRating}</p>
 				<div className="plot">
 					<img src={selected.Poster} />
 					<p>{selected.Plot}</p>
 				</div>
-				<button className="close" onClick={closePopup}>Close</button>
+				<button className="close" onClick={closePopup}>Fermer</button>
 			</div>
 		</section>
 	)

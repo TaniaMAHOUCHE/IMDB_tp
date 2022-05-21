@@ -4,7 +4,7 @@ import Search from './Search';
 import Popup from './Popup';
 import Results from './Results';
 
-function Logic() {
+function SearchMovie() {
   const [state, setState] = useState({
     s: "",
     results: [],
@@ -18,10 +18,6 @@ function Logic() {
       axios(apiurl + "?movie_name=" + state.s).then(({ data }) => {
       
         let results = data;
-        // let results = JSON.parse(data);
-        console.log("results===> " + results);
-        // console.log(data);
-       
         setState(prevState => {
           return { ...prevState, results: results }
         })
@@ -36,9 +32,7 @@ function Logic() {
       return { ...prevState, s: s }
     });
   }
-  // const api = "http://www.omdbapi.com/?apikey=dfe6d885";
   const openPopup = openpopup_url => {
-    // axios(apiurl + "&i=" + id).then(({ data }) => {
     axios(openpopup_url).then(({ data }) => {
       let result = data;
 
@@ -59,7 +53,7 @@ function Logic() {
   return (
     <div className="App">
       <header>
-        <h1>Movie Database</h1>
+        <h1>Recherchez votre film</h1>
       </header>
       <main>
         <Search handleInput={handleInput} search={search} />
@@ -72,4 +66,4 @@ function Logic() {
   );
 }
 
-export default Logic
+export default SearchMovie
